@@ -32,6 +32,6 @@ node {
     }
 	stage('Deploy image') {
         
-                sh("docker run -d -p 8081:80 chaimaelhadraoui/tp4:latest")
+                sh("docker run -d -p 8082:80 chaimaelhadraoui/tp4:latest")
     }
 }
