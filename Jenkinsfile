@@ -30,4 +30,8 @@ node {
             } 
                 echo "Trying to Push Docker Build to DockerHub"
     }
+	stage('Deploy image') {
+        
+                sh -c "docker run -d -p 8081:80 chaimaelhadraoui/tp4:latest"
+    }
 }
